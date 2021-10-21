@@ -1,0 +1,21 @@
+name: Sed-replacer
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "Galaxina"
+          replace: "Galaxina"
+      - name: Pull All Updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Welcome to Galaxina'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: NitricXd
+          commit_user_email: nitricxd@gmail.com
+          commit_author: NitricXd <nitricxd@gmail.com>
