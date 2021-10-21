@@ -97,7 +97,6 @@ if ENV:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
         )
-     WHITELIST_CHATS = Config.WHITELIST_CHATS
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
@@ -166,6 +165,12 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     YOUTUBE_API_KEY = Config.YOUTUBE_API_KEY
     INFOPIC = Config.INFOPIC
+    try:
+        WHITELIST_CHATS = set(
+            int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
+        )
+    except ValueError:
+        raise Exception("Your blacklisted chats list does not contain valid integers.")
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
