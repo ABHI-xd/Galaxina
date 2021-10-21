@@ -46,13 +46,6 @@ if ENV:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
-        TEMP_DOWNLOAD_DIRECTORY = set(
-            int(x) for x in os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "").split()
-        )
-    except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
-    
-    try:
         DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
@@ -96,16 +89,8 @@ if ENV:
     REDIS_URL = os.environ.get("REDIS_URL")
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "")
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
 
-    
-
-    try:
-        TEMP_DOWNLOAD_DIRECTORY = set(
-            int(x) for x in os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "").split()
-        )
-    except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
 	
     try:
         WHITELIST_CHATS = set(
@@ -179,12 +164,7 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     YOUTUBE_API_KEY = Config.YOUTUBE_API_KEY
     INFOPIC = Config.INFOPIC
-    try:
-        WHITELIST_CHATS = set(
-            int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
-        )
-    except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
+    TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
