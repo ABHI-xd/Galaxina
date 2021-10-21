@@ -76,7 +76,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="📜 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://www.youtube.com/channel/UC0B7hLztbmieszotXGJqrLw"),
-        InlineKeyboardButton(text="❔ ʜᴇʟᴘ", url="http://t.me/GalaXinaBot?start=help"),
+        InlineKeyboardButton(text="❔ ʜᴇʟᴘ", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
