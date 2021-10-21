@@ -35,7 +35,7 @@ Should any be missing kindly let us know at [Sanki Bots](https://t.me/Sanki_BOTs
 ## The GalaXina bot the telegram Bot Project
 The Advanced Branch (For PRO's)
 
-The Galaxina bot(advanced)
+The Galaxina bot(advanced) -
 
 # Contributors
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=NitricXd/GalaXina)
