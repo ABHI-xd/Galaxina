@@ -20,7 +20,7 @@ class Config(object):
     OWNER_ID = 2042990675  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "KuziYo"
     SUPPORT_CHAT = "Galaxina_Support"  # Your own group for support, do not add the @
-    WHITELIST_CHATS = ""
+    WHITELIST_CHATS = []
     JOIN_LOGGER = (
         -1001627826970
     )  # Prints any new group the bot is added to, prints just the name and ID.
