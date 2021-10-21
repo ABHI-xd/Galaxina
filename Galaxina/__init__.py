@@ -166,6 +166,14 @@ else:
     INFOPIC = Config.INFOPIC
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
 
+	
+    try:
+        WHITELIST_CHATS = set(
+            int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
+        )
+    except ValueError:
+        raise Exception("Your blacklisted chats list does not contain valid integers.")
+
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
