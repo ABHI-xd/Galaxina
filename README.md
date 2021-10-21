@@ -1,4 +1,4 @@
-## The Anki Vector Based on Python Telegram Bot 
+## The Sanki Bot's Project on Python Telegram Bot 
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/NitricXd/Galaxina?label=Repo%20Size) ![Last Commit](https://img.shields.io/github/last-commit/nitricxd/galaxina?color=red&label=Last%20commit&logo=nitricxd&logoColor=green)
 <p align="center">
