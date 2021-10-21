@@ -173,13 +173,6 @@ else:
     YOUTUBE_API_KEY = Config.YOUTUBE_API_KEY
     INFOPIC = Config.INFOPIC
     try:
-        TEMP_DOWNLOAD_DIRECTORY = set(
-            int(x) for x in os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "").split()
-        )
-    except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
-
-    try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
         )
