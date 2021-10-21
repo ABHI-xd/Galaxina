@@ -68,7 +68,7 @@ class Config(object):
         "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
     )
     AI_API_KEY = "ea6f630d3e93996383af66584bc4fe0351a2c623dd4dd3c1fe777dab1bdbda622073234fdc4e4d44f7f493d098872e984632ca2b2f05e1502533cf852f76189a"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
-    TEMP_DOWNLOAD_DIRECTORY = "./"
+    TEMP_DOWNLOAD_DIRECTORY = " "
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
 
