@@ -1,9 +1,0 @@
-# See https://help.github.com/articles/about-codeowners/ for valid syntax for entries.
-# Default owners for everything in the repo, unless a later match takes precedence
-
-# Phoenix owns the files under blacklist thingies
-/Galaxina/modules/blacklistusers.py @KuziYo
-/Galaxina/modules/sql/blacklistusers_sql.py @KuziYo
-#pep8-ing the code doesn't change maker
-/Galaxina/modules/paste.py @KuziYo
-/Galaxina/modules/speed_test.py @KuziYo
