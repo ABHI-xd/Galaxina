@@ -1,5 +1,8 @@
+###Fixed minor issues with conf.py By @AnuragSharma080.
+
+
 from envparse import env
-from MizuharaSmexyBot import LOGGER
+from Galaxina import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
