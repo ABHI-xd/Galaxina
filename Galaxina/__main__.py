@@ -63,9 +63,9 @@ from Galaxina.modules.helper_funcs.misc import paginate_modules
 from Galaxina.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-𝙃𝙚𝙡𝙡𝙤 𝙩𝙝𝙚𝙧𝙚, 𝙄'𝙢 [Gαɭαχίηα](t.me/Sanki_BOTs) 🍑
-𝙄'𝙢 𝙖 𝙋𝙤𝙬𝙚𝙧𝙛𝙪𝙡 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙧 𝙗𝙤𝙩 𝙒𝙞𝙩𝙝 𝘾𝙤𝙤𝙡 𝙈𝙤𝙙𝙪𝙡𝙚𝙨. 𝙈𝙖𝙙𝙚 𝙗𝙮 [𓆩Nɪᴛʀɪᴄ'Xd𓆪](t.me/KuziYo)
-𝙃𝙞𝙩 /help 𝙩𝙤 𝙛𝙞𝙣𝙙 𝙢𝙮 𝙡𝙞𝙨𝙩 𝙤𝙛 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🕹
+Hᴇʟʟᴏ ᴛʜᴇʀᴇ, I'ᴍ [Gαɭαχίηα](t.me/Sanki_BOTs) 🍑
+I'ᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴄᴏᴏʟ ᴍᴏᴅᴜʟᴇꜱ. Mᴀᴅᴇ ʙʏ [𓆩Nɪᴛʀɪᴄ'Xd𓆪](t.me/KuziYo)
+Hɪᴛ /help ᴛᴏ ꜰɪɴᴅ ᴍʏ ʟɪꜱᴛ ᴏꜰ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ. 🕹
  
 """
 
@@ -76,7 +76,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="📜 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://www.youtube.com/channel/UC0B7hLztbmieszotXGJqrLw"),
-        InlineKeyboardButton(text="❔ ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="❔ ★ᴏᴡɴᴇʀ", url="https://t.me/KuziYo"),
     ],
     [
         InlineKeyboardButton(
